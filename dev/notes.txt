@@ -7,8 +7,10 @@
 	- x basic styling one page
 	- x with useEffect, fetch data from API (JSON file online)
 	- x put a 3-second wait 
-	- .. on load, write "Loading..."
-	- replace "Loading..." with React Icons
+	- x on load, write "Loading..."
+	- .. replace "Loading..." with React Icons
+		- .. replace loading with react icon
+		- animate icon
 	- list all users with photo
 		- mobile first
 		- create Employee component
