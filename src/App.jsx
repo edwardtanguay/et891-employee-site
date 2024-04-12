@@ -20,7 +20,7 @@ function App() {
 				Employee Site
 			</h1>
 			{employees.length === 0 ? (
-				<p><ImSpinner9 class="text-3xl text-yellow-300"/></p>
+				<p><ImSpinner9 class="animate-spin text-3xl text-yellow-300"/></p>
 			) : (
 				<>
 					<p className="mb-3">

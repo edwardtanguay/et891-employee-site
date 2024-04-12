@@ -9,8 +9,8 @@
 	- x put a 3-second wait 
 	- x on load, write "Loading..."
 	- .. replace "Loading..." with React Icons
-		- .. replace loading with react icon
-		- animate icon
+		- x replace loading with react icon
+		- .. animate icon
 	- list all users with photo
 		- mobile first
 		- create Employee component
