@@ -27,8 +27,8 @@ function App() {
 						There are {employees.length} employees.
 					</p>
 					<ul>
-						{employees.map((emp) => {
-              return <Employee employee={emp} key={emp.employeeID} />
+						{employees.map((employee) => {
+              return <Employee employee={employee} key={employee.employeeID} />
 						})}
 					</ul>
 				</>

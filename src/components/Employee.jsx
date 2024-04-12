@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-export const Employee = (props) => {
+
+export const Employee = ({employee}) => {
 	return (
-		<li key={props.employee.employeeID}>
-			{props.employee.firstName} {props.employee.lastName}
+		<li key={employee.employeeID}>
+			{employee.firstName} {employee.lastName}
 		</li>
 	);
 };
