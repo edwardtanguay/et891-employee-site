@@ -26,11 +26,11 @@ function App() {
 					<p className="mb-3">
 						There are {employees.length} employees.
 					</p>
-					<ul>
+					<div>
 						{employees.map((employee) => {
               return <Employee employee={employee} key={employee.employeeID} />
 						})}
-					</ul>
+					</div>
 				</>
 			)}
 		</main>
