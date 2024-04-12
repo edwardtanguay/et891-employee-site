@@ -10,13 +10,13 @@ function App() {
 			const response = await fetch(employeesUrl);
 			const _employees = await response.json();
 			setEmployees(_employees); // start saving employees to the state variable
-		}, 1000);
+		}, 3000);
 	}, []);
 
 	return (
 		<main>
-			<h1 className="text-3xl text-orange-500 italic">Employee Site</h1>
-			<p>There are {employees.length} employees.</p>
+			<h1 className="text-3xl text-orange-500 italic mb-3">Employee Site</h1>
+			<p className="mb-3">There are {employees.length} employees.</p>
       <ul>
         {employees.map(employee => {
           return (
