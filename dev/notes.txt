@@ -8,9 +8,9 @@
 	- x with useEffect, fetch data from API (JSON file online)
 	- x put a 3-second wait 
 	- x on load, write "Loading..."
-	- .. replace "Loading..." with React Icons
+	- x replace "Loading..." with React Icons
 		- x replace loading with react icon
-		- .. animate icon
+		- x animate icon
 	- list all users with photo
 		- mobile first
 		- create Employee component
