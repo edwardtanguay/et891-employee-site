@@ -18,12 +18,13 @@
 		- x loop through array of objects (map) and send employee object to component
 		- x publish to online vercel site
 		- x style computer screen
-		.. rest of data, design
-		 	- .. download images
-			- .. image in
-	- publish to Vercel online
-		- look at site with smart phones
-	- search box
+		- x rest of data, design
+		 	- x download images
+			- x image in
+	- x publish to Vercel online
+		- x look at site with smart phones
+	- .. search box
+		- .. create input box without button
 		- searches based on first name, last name and displays the users found
 	- make Employee of the Week box
 		- get random id from 1 to 9

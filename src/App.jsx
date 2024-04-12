@@ -18,9 +18,12 @@ function App() {
 
 	return (
 		<main>
-      <Header/>
+			<Header />
+			<input className="w-full text-3xl rounded mb-3 md:w-[30rem]" placeholder="search employees"/>
 			{employees.length === 0 ? (
-				<p><ImSpinner9 className="animate-spin text-3xl text-yellow-300"/></p>
+				<p>
+					<ImSpinner9 className="animate-spin text-3xl text-yellow-300" />
+				</p>
 			) : (
 				<>
 					<p className="mb-3">
@@ -28,7 +31,12 @@ function App() {
 					</p>
 					<div>
 						{employees.map((employee) => {
-              return <Employee employee={employee} key={employee.employeeID} />
+							return (
+								<Employee
+									employee={employee}
+									key={employee.employeeID}
+								/>
+							);
 						})}
 					</div>
 				</>
