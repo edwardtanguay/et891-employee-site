@@ -1,0 +1,20 @@
+- .. build a React site
+	- x create site
+		- x npm create vite@latest
+	- x blank out the site
+	- .. install Git
+	- Tailwind
+	- one page
+	- with useEffect, fetch data from API (JSON file online)
+	- list all users with photo
+		- mobile first
+		- create Employee component
+		- loop through array of objects (map) and send employee object to component
+	- publish to Vercel online
+		- look at site with smart phones
+	- search box
+		- searches based on first name, last name and displays the users found
+	- make Employee of the Week box
+		- get random id from 1 to 9
+		- get object with that id
+		- call the Employee component and send that object as prop
