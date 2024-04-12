@@ -5,9 +5,10 @@
 	- x install Git
 	- x Tailwind
 	- x basic styling one page
-	- .. with useEffect, fetch data from API (JSON file online)
-
-	- put a 3-second wait on loading and make a waiting spinner
+	- x with useEffect, fetch data from API (JSON file online)
+	- x put a 3-second wait 
+	- .. on load, write "Loading..."
+	- replace "Loading..." with React Icons
 	- list all users with photo
 		- mobile first
 		- create Employee component
