@@ -1,16 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const employeesUrl = "https://edwardtanguay.vercel.app/share/employees.json";
 
-const employees = [];
-
 function App() {
+  const [employees, setEmployees] = useState([]);
+
 	useEffect(() => {
 		(async () => {
 			const response = await fetch(employeesUrl);
-			const employees = await response.json();
-			console.log(employees);
-			console.log(`there are ${employees.length} employees`);
+			const _employees = await response.json();
+      setEmployees(_employees); // start saving employees to the state variable
 		})();
 	}, []);
 
