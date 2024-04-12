@@ -2,8 +2,8 @@
 	- x create site
 		- x npm create vite@latest
 	- x blank out the site
-	- .. install Git
-	- Tailwind
+	- x install Git
+	- .. Tailwind
 	- one page
 	- with useEffect, fetch data from API (JSON file online)
 	- list all users with photo
