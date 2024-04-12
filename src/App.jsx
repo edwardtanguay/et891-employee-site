@@ -15,15 +15,27 @@ function App() {
 
 	return (
 		<main>
-			<h1 className="text-3xl text-orange-500 italic mb-3">Employee Site</h1>
-			<p className="mb-3">There are {employees.length} employees.</p>
-      <ul>
-        {employees.map(employee => {
-          return (
-            <li key={employee.employeeID}>{employee.firstName} {employee.lastName}</li>
-          )
-        })}
-      </ul>
+			<h1 className="text-3xl text-orange-500 italic mb-3">
+				Employee Site
+			</h1>
+			{employees.length === 0 ? (
+				<p>Loading...</p>
+			) : (
+				<>
+					<p className="mb-3">
+						There are {employees.length} employees.
+					</p>
+					<ul>
+						{employees.map((employee) => {
+							return (
+								<li key={employee.employeeID}>
+									{employee.firstName} {employee.lastName}
+								</li>
+							);
+						})}
+					</ul>
+				</>
+			)}
 		</main>
 	);
 }
