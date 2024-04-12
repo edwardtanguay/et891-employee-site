@@ -3,8 +3,8 @@
 		- x npm create vite@latest
 	- x blank out the site
 	- x install Git
-	- .. Tailwind
-	- one page
+	- x Tailwind
+	- .. basic styling one page
 	- with useEffect, fetch data from API (JSON file online)
 	- list all users with photo
 		- mobile first
