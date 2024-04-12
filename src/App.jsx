@@ -10,6 +10,7 @@ function App() {
 	const [filteredEmployees, setFilteredEmployees] = useState([]);
 	// const [employees, setEmployees] = useState([]);
 	const [searchText, setSearchText] = useState("");
+	const [dataIsLoading, setDataIsLoading] = useState(true);
 
 	useEffect(() => {
 		setTimeout(async () => {
@@ -17,7 +18,8 @@ function App() {
 			const _employees = await response.json();
 			setOriginalEmployees(_employees);
 			setFilteredEmployees(_employees);
-		}, 0);
+			setDataIsLoading(false);
+		}, 2000);
 	}, []);
 
 	const handleSearchTextChange = (e) => {
@@ -25,7 +27,7 @@ function App() {
 		setSearchText(value);
 
 		const _filteredEmployees = originalEmployees.filter((employee) => {
-			const bulkSearch = employee.firstName + '|'+ employee.lastName; 
+			const bulkSearch = employee.firstName + "|" + employee.lastName;
 			return bulkSearch.toLowerCase().includes(value.toLowerCase());
 		});
 		setFilteredEmployees(_filteredEmployees);
@@ -41,9 +43,15 @@ function App() {
 				placeholder="search employees"
 			/>
 			{filteredEmployees.length === 0 ? (
-				<p>
-					<ImSpinner9 className="animate-spin text-3xl text-yellow-300" />
-				</p>
+				<>
+					{dataIsLoading ? (
+						<p>
+							<ImSpinner9 className="animate-spin text-3xl text-yellow-300" />
+						</p>
+					) : (
+						<p>no results found</p>
+					)}
+				</>
 			) : (
 				<>
 					<p className="mb-3">
