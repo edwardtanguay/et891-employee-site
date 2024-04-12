@@ -4,8 +4,8 @@
 	- x blank out the site
 	- x install Git
 	- x Tailwind
-	- .. basic styling one page
-	- with useEffect, fetch data from API (JSON file online)
+	- x basic styling one page
+	- .. with useEffect, fetch data from API (JSON file online)
 	- list all users with photo
 		- mobile first
 		- create Employee component
