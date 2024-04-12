@@ -6,20 +6,28 @@ import { Employee } from "./components/Employee";
 const employeesUrl = "https://edwardtanguay.vercel.app/share/employees.json";
 
 function App() {
+	// const [originalEmployees, setOriginalEmployees] = useState([]);
+	// const [filteredEmployees, setFilteredEmployees] = useState([]);
 	const [employees, setEmployees] = useState([]);
+	const [searchText, setSearchText] = useState('');
 
 	useEffect(() => {
 		setTimeout(async () => {
 			const response = await fetch(employeesUrl);
 			const _employees = await response.json();
 			setEmployees(_employees); // start saving employees to the state variable
-		}, 3000);
+		}, 0);
 	}, []);
+
+	const handleSearchTextChange = (e) => {
+		const value = e.target.value;
+		setSearchText(value);
+	}
 
 	return (
 		<main>
 			<Header />
-			<input className="w-full text-3xl rounded mb-3 md:w-[30rem]" placeholder="search employees"/>
+			<input value={searchText} onChange={(e) => handleSearchTextChange(e)} className="w-full text-3xl rounded mb-3 md:w-[30rem]" placeholder="search employees"/>
 			{employees.length === 0 ? (
 				<p>
 					<ImSpinner9 className="animate-spin text-3xl text-yellow-300" />

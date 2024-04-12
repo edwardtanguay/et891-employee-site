@@ -24,6 +24,7 @@
 	- x publish to Vercel online
 		- x look at site with smart phones
 	- .. search box
+		- .. create searchText state variable and connect to input box
 		- .. create input box without button
 		- searches based on first name, last name and displays the users found
 	- make Employee of the Week box
