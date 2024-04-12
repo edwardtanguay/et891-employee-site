@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ImSpinner9 } from "react-icons/im";
+import { Header } from "./components/Header";
 
 const employeesUrl = "https://edwardtanguay.vercel.app/share/employees.json";
 
@@ -16,9 +17,7 @@ function App() {
 
 	return (
 		<main>
-			<h1 className="text-3xl text-orange-500 italic mb-3">
-				Employee Site
-			</h1>
+      <Header/>
 			{employees.length === 0 ? (
 				<p><ImSpinner9 class="animate-spin text-3xl text-yellow-300"/></p>
 			) : (

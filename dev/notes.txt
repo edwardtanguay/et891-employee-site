@@ -11,8 +11,9 @@
 	- x replace "Loading..." with React Icons
 		- x replace loading with react icon
 		- x animate icon
-	- list all users with photo
-		- mobile first
+	- .. make header a component
+	- list all users with photo and more information
+		- x mobile first
 		- create Employee component
 		- loop through array of objects (map) and send employee object to component
 	- publish to Vercel online
