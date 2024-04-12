@@ -6,6 +6,8 @@
 	- x Tailwind
 	- x basic styling one page
 	- .. with useEffect, fetch data from API (JSON file online)
+
+	- put a 3-second wait on loading and make a waiting spinner
 	- list all users with photo
 		- mobile first
 		- create Employee component
